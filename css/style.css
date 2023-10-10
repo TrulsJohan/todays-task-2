@@ -1,0 +1,79 @@
+/* Universal selector */
+* {
+    color: red;
+    font-size: 28px;
+}
+
+/* Tag selector */
+p {
+    color: blue;
+}
+
+/* Class selector*/
+.highlight {
+    color: green;
+}
+
+/* ID selector */
+#header {
+    background-color: yellow;
+}
+
+/* Descendant selector*/
+article p {
+    color: darkcyan;
+}
+
+/* Child selector */
+ul > li {
+    list-style-type: square;
+}
+
+/* Sibling selector */
+h2 + p {
+    background-color: green;
+}
+
+/* General sibling selector*/
+h2 ~ p {
+    background-color: blue;
+}
+
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: cadetblue;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    color: white;
+}
+
+/* Pseudo-classes selector */
+a:hover {
+    background-color: cadetblue;
+}
+
+ul li:first-child {
+    background-color: orange;
+}
+
+ul li:nth-child(2) {
+    background-color: aquamarine;
+}
+
+p::before {
+    content: "icon";
+}
+
+p::after {
+    content: "";
+}
+
+p.dummy::first-letter {
+    font-size: 50px;
+    initial-letter: 3;
+}
